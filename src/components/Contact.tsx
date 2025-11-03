@@ -140,7 +140,7 @@ const Contact = () => {
                 
                 <div className="space-y-6">
                   <a 
-                    href="https://www.linkedin.com/in/vishal-sarvade"
+                    href="https://www.linkedin.com/in/vishal-kumar-sarvade-95494989"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 bg-accent/10 rounded-lg hover:bg-accent/20 transition-colors group"
@@ -155,7 +155,7 @@ const Contact = () => {
                   </a>
 
                   <a 
-                    href="mailto:vishal.sarvade@example.com"
+                    href="mailto:sarvade1.vishalkumar@gmail.com"
                     className="flex items-center gap-4 p-4 bg-secondary/10 rounded-lg hover:bg-secondary/20 transition-colors group"
                   >
                     <div className="p-3 bg-secondary rounded-lg group-hover:scale-110 transition-transform">
@@ -163,7 +163,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-primary">Email</p>
-                      <p className="text-sm text-muted-foreground">vishal.sarvade@example.com</p>
+                      <p className="text-sm text-muted-foreground">sarvade1.vishalkumar@gmail.com</p>
                     </div>
                   </a>
 

@@ -8,64 +8,36 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base colors - Professional Tech Theme */
-    --background: 210 17% 97%;
-    --foreground: 210 60% 10%;
-
-    /* Card styling */
-    --card: 0 0% 100%;
-    --card-foreground: 210 60% 10%;
-
-    /* Popover styling */
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 60% 10%;
-
-    /* Primary - Deep Navy (authority, trust) */
-    --primary: 210 60% 10%;
-    --primary-foreground: 210 17% 97%;
-
-    /* Secondary - Warm Charcoal */
-    --secondary: 210 29% 24%;
-    --secondary-foreground: 210 17% 97%;
-
-    /* Accent - Vibrant Cyan (innovation) */
-    --accent: 189 100% 50%;
-    --accent-foreground: 210 60% 10%;
-
-    /* Muted tones */
-    --muted: 210 17% 90%;
-    --muted-foreground: 210 29% 40%;
-
-    /* Highlight - Amber (achievements, CTAs) */
-    --highlight: 38 92% 50%;
-    --highlight-foreground: 210 60% 10%;
-
-    /* Destructive */
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 17% 97%;
-
-    /* Borders and inputs */
-    --border: 210 17% 85%;
-    --input: 210 17% 85%;
-    --ring: 189 100% 50%;
-
-    /* Border radius */
-    --radius: 0.75rem;
-
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 60% 10%) 0%, hsl(210 29% 24%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(189 100% 50%) 0%, hsl(189 100% 40%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(210 17% 97%) 0%, hsl(210 17% 93%) 100%);
-
-    /* Shadows */
-    --shadow-soft: 0 2px 8px hsla(210, 60%, 10%, 0.08);
-    --shadow-medium: 0 4px 16px hsla(210, 60%, 10%, 0.12);
-    --shadow-large: 0 8px 32px hsla(210, 60%, 10%, 0.16);
-    --shadow-glow: 0 0 24px hsla(189, 100%, 50%, 0.3);
-
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --background: 220 60% 12%;
+    --foreground: 0 0% 95%;
+    --card: 220 50% 16%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 50% 16%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 91%;
+    --secondary-foreground: 220 60% 12%;
+    --muted: 220 40% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 211 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --highlight: 211 100% 50%;
+    --highlight-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 40% 20%;
+    --input: 220 40% 20%;
+    --ring: 211 100% 50%;
+    --radius: 0.5rem;
+    
+    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.15);
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.2);
+    --shadow-large: 0 8px 24px rgba(0, 0, 0, 0.25);
+    --shadow-glow: 0 0 30px rgba(0, 123, 255, 0.2);
+    
+    --gradient-accent: linear-gradient(135deg, hsl(211, 100%, 50%), hsl(211, 100%, 40%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220, 60%, 12%), hsl(220, 50%, 16%));
   }
 
   .dark {

@@ -60,8 +60,8 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
-              Let's Build Something Great Together
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
+              Let's Collaborate on Scalable Data Engineering Solutions
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
               Ready to discuss your next data challenge? Whether you're scaling your data infrastructure, optimizing performance, or building from scratch — I'd love to connect.

@@ -77,8 +77,14 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-6">
+    <section id="experience" className="py-24 bg-gradient-hero relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute top-20 left-20 w-80 h-80 border border-accent/30 rounded-full"></div>
+        <div className="absolute bottom-40 right-20 w-64 h-64 border border-highlight/30 rounded-full"></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
@@ -103,25 +109,26 @@ const Experience = () => {
                   {/* Timeline dot */}
                   <div className="absolute left-0 md:left-8 -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background hidden sm:block"></div>
 
-                  {/* Content card */}
-                  <div className="sm:ml-0 md:ml-20 bg-card p-8 rounded-xl border border-border hover:border-accent transition-colors">
-                    <div className="flex items-start gap-4 mb-6">
-                      <div className="p-3 bg-accent/10 rounded-lg">
-                        <Briefcase className="w-6 h-6 text-accent" />
+                  {/* Content card with premium styling */}
+                  <div className="sm:ml-0 md:ml-20 premium-card group">
+                    <div className="flex items-start gap-5 mb-6">
+                      <div className="p-4 bg-gradient-accent rounded-xl group-hover:scale-110 transition-transform duration-300">
+                        <Briefcase className="w-7 h-7 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-heading font-bold text-foreground mb-1">
+                        <h3 className="text-2xl font-heading font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
                           {exp.title}
                         </h3>
-                        <div className="text-accent font-semibold mb-2">
+                        <div className="text-accent font-semibold text-lg mb-2">
                           {exp.company}
                         </div>
                         {exp.client && (
-                          <div className="text-sm text-muted-foreground mb-1">
-                            Client: {exp.client}
+                          <div className="text-sm text-muted-foreground/80 mb-1">
+                            Client: <span className="font-medium">{exp.client}</span>
                           </div>
                         )}
-                        <div className="text-sm text-muted-foreground">
+                        <div className="text-sm text-muted-foreground flex items-center gap-2">
+                          <span className="w-2 h-2 bg-accent rounded-full"></span>
                           {exp.period}
                         </div>
                       </div>
@@ -131,21 +138,21 @@ const Experience = () => {
                       {exp.responsibilities.map((resp, idx) => (
                         <div key={idx} className="flex items-start gap-3">
                           <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                          <p className="text-muted-foreground">{resp}</p>
+                          <p className="text-muted-foreground leading-relaxed">{resp}</p>
                         </div>
                       ))}
                     </div>
 
-                    {/* Achievements (if any) */}
+                    {/* Achievements with enhanced styling */}
                     {exp.achievements && (
-                      <div className="grid md:grid-cols-3 gap-4 mt-6 pt-6 border-t border-border">
+                      <div className="grid md:grid-cols-3 gap-4 mt-8 pt-6 border-t border-border">
                         {exp.achievements.map((achievement, idx) => (
-                          <div key={idx} className="p-4 bg-accent/5 rounded-lg border border-accent/20">
+                          <div key={idx} className="p-5 bg-accent/5 rounded-xl border border-accent/20 hover:border-accent/40 hover:bg-accent/10 transition-all duration-300 hover:scale-105">
                             <div className="flex items-center gap-2 mb-2">
-                              <achievement.icon className="w-4 h-4 text-accent" />
+                              <achievement.icon className="w-5 h-5 text-accent" />
                               <h4 className="font-semibold text-sm text-foreground">{achievement.title}</h4>
                             </div>
-                            <p className="text-xs text-muted-foreground">{achievement.impact}</p>
+                            <p className="text-xs text-muted-foreground leading-relaxed">{achievement.impact}</p>
                           </div>
                         ))}
                       </div>

@@ -8,36 +8,38 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 60% 12%;
-    --foreground: 0 0% 95%;
-    --card: 220 50% 16%;
-    --card-foreground: 0 0% 95%;
-    --popover: 220 50% 16%;
-    --popover-foreground: 0 0% 95%;
+    --background: 212 50% 12%;
+    --foreground: 210 17% 98%;
+    --card: 212 40% 15%;
+    --card-foreground: 210 17% 98%;
+    --popover: 212 40% 15%;
+    --popover-foreground: 210 17% 98%;
     --primary: 211 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 91%;
-    --secondary-foreground: 220 60% 12%;
-    --muted: 220 40% 20%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 211 100% 50%;
+    --secondary: 210 17% 97%;
+    --secondary-foreground: 212 50% 12%;
+    --muted: 212 35% 20%;
+    --muted-foreground: 210 10% 70%;
+    --accent: 189 100% 50%;
     --accent-foreground: 0 0% 100%;
-    --highlight: 211 100% 50%;
-    --highlight-foreground: 0 0% 100%;
+    --highlight: 189 100% 50%;
+    --highlight-foreground: 212 50% 12%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 40% 20%;
-    --input: 220 40% 20%;
+    --border: 212 30% 22%;
+    --input: 212 30% 22%;
     --ring: 211 100% 50%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
     
-    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.15);
-    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.2);
-    --shadow-large: 0 8px 24px rgba(0, 0, 0, 0.25);
-    --shadow-glow: 0 0 30px rgba(0, 123, 255, 0.2);
+    --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --shadow-large: 0 16px 48px rgba(0, 0, 0, 0.16);
+    --shadow-glow: 0 0 40px rgba(0, 224, 255, 0.15);
+    --shadow-hover: 0 12px 32px rgba(0, 224, 255, 0.2);
     
-    --gradient-accent: linear-gradient(135deg, hsl(211, 100%, 50%), hsl(211, 100%, 40%));
-    --gradient-subtle: linear-gradient(180deg, hsl(220, 60%, 12%), hsl(220, 50%, 16%));
+    --gradient-accent: linear-gradient(135deg, hsl(211, 100%, 50%), hsl(189, 100%, 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(212, 50%, 12%) 0%, hsl(212, 45%, 15%) 50%, hsl(212, 40%, 18%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(212, 40%, 15%), hsl(212, 38%, 17%));
   }
 
   .dark {
@@ -138,11 +140,19 @@ All colors MUST be HSL.
 
   /* Hover effects */
   .hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+    @apply transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-hover;
   }
 
   .hover-glow {
-    @apply transition-all duration-300 hover:shadow-[0_0_24px_hsla(189,100%,50%,0.3)];
+    @apply transition-all duration-500 ease-out hover:shadow-glow hover:border-accent/50;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 ease-out hover:scale-105;
+  }
+  
+  .premium-card {
+    @apply bg-gradient-card border border-border rounded-xl p-6 hover-lift hover-glow;
   }
 
   /* Gradient backgrounds */

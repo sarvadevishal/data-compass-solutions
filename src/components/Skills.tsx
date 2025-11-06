@@ -85,8 +85,14 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-24 bg-background relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute top-20 right-40 w-72 h-72 border border-accent/30 rounded-full"></div>
+        <div className="absolute bottom-20 left-40 w-80 h-80 border border-highlight/30 rounded-full"></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
@@ -99,20 +105,20 @@ const Skills = () => {
             <div className="w-24 h-1 bg-gradient-accent mx-auto"></div>
           </div>
 
-          {/* Skills grid */}
+          {/* Skills grid with premium cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => (
               <div 
                 key={category.title}
-                className="bg-card p-8 rounded-xl border border-border hover:border-accent transition-colors animate-scale-in"
+                className="premium-card group animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Category header */}
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-3 bg-accent/10 rounded-lg">
-                    <category.icon className="w-6 h-6 text-accent" />
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="p-4 bg-gradient-accent rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <category.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-lg font-heading font-bold text-foreground">
+                  <h3 className="text-lg font-heading font-bold text-foreground group-hover:text-accent transition-colors">
                     {category.title}
                   </h3>
                 </div>
@@ -122,12 +128,12 @@ const Skills = () => {
                   {category.skills.map((skill) => (
                     <div 
                       key={skill.name}
-                      className="flex items-center justify-between gap-3"
+                      className="flex items-center justify-between gap-3 p-2 rounded-lg hover:bg-accent/5 transition-colors"
                     >
-                      <span className="text-muted-foreground text-sm">
+                      <span className="text-muted-foreground text-sm font-medium">
                         {skill.name}
                       </span>
-                      <span className={`text-xs px-2 py-1 rounded-full ${getLevelColor(skill.level)}`}>
+                      <span className={`text-xs px-3 py-1 rounded-full font-semibold ${getLevelColor(skill.level)}`}>
                         {skill.level}
                       </span>
                     </div>
@@ -137,12 +143,12 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Core strengths summary */}
-          <div className="mt-16 p-8 bg-gradient-subtle rounded-xl border border-accent/20 animate-fade-in">
-            <h3 className="text-2xl font-heading font-bold text-foreground mb-4 text-center">
+          {/* Core strengths summary with premium styling */}
+          <div className="mt-16 p-10 bg-gradient-card rounded-2xl border border-accent/30 animate-fade-in shadow-glow hover:shadow-hover transition-all duration-500">
+            <h3 className="text-2xl font-heading font-bold text-foreground mb-6 text-center">
               Core Expertise
             </h3>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-center gap-4">
               {[
                 'Data Architecture',
                 'ETL Development',
@@ -151,10 +157,11 @@ const Skills = () => {
                 'Cloud Migration',
                 'Team Leadership',
                 'Stakeholder Communication',
-              ].map((strength) => (
+              ].map((strength, idx) => (
                 <span 
                   key={strength}
-                  className="px-4 py-2 bg-accent/10 border border-accent/30 rounded-lg text-sm text-foreground hover:bg-accent/20 transition-colors"
+                  className="px-5 py-2.5 bg-accent/10 border border-accent/30 rounded-xl text-sm text-foreground font-medium hover:bg-accent/20 hover:border-accent/50 hover:scale-105 transition-all duration-300 cursor-default animate-fade-in"
+                  style={{ animationDelay: `${idx * 0.05}s` }}
                 >
                   {strength}
                 </span>

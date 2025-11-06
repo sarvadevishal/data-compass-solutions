@@ -25,8 +25,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-24 bg-background relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute top-40 left-10 w-72 h-72 border border-accent/30 rounded-full"></div>
+        <div className="absolute bottom-40 right-10 w-96 h-96 border border-highlight/30 rounded-full"></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
@@ -50,30 +56,30 @@ const About = () => {
               </div>
             </div>
 
-            {/* Highlights grid */}
+            {/* Highlights grid with premium styling */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
               {highlights.map((highlight, index) => (
                 <div 
                   key={highlight.title}
-                  className="bg-card p-6 rounded-xl border border-border hover:border-accent transition-colors animate-scale-in"
+                  className="premium-card group animate-scale-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="inline-flex p-3 bg-accent/10 rounded-lg mb-4">
-                    <highlight.icon className="w-6 h-6 text-accent" />
+                  <div className="inline-flex p-4 bg-gradient-accent rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <highlight.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-lg font-heading font-bold text-foreground mb-2">
+                  <h3 className="text-lg font-heading font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
                     {highlight.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     {highlight.description}
                   </p>
                 </div>
               ))}
             </div>
 
-            {/* Philosophy quote */}
-            <div className="mt-12 p-8 bg-gradient-subtle rounded-xl border border-accent/20 animate-fade-in">
-              <blockquote className="text-xl font-quote italic text-foreground/90 text-center">
+            {/* Philosophy quote with premium styling */}
+            <div className="mt-16 p-10 bg-gradient-card border border-accent/30 rounded-2xl animate-fade-in shadow-glow hover:shadow-hover transition-all duration-500">
+              <blockquote className="text-xl md:text-2xl font-quote italic text-foreground/90 text-center leading-relaxed">
                 "Great data architecture isn't about fancy tools — it's about understanding business problems deeply and building solutions that scale."
               </blockquote>
             </div>

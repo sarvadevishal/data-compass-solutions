@@ -68,6 +68,7 @@ export default {
         medium: "var(--shadow-medium)",
         large: "var(--shadow-large)",
         glow: "var(--shadow-glow)",
+        hover: "var(--shadow-hover)",
       },
       keyframes: {
         "accordion-down": {

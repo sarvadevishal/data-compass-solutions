@@ -152,7 +152,8 @@ All colors MUST be HSL.
   }
   
   .premium-card {
-    @apply bg-gradient-card border border-border rounded-xl p-6 hover-lift hover-glow;
+    @apply border border-border rounded-xl p-6 hover-lift hover-glow;
+    background: var(--gradient-card);
   }
 
   /* Gradient backgrounds */

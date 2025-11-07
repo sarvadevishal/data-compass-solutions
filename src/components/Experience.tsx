@@ -94,10 +94,10 @@ const Experience = () => {
             <div className="w-24 h-1 bg-gradient-accent mx-auto"></div>
           </div>
 
-          {/* Timeline */}
+          {/* Animated Timeline */}
           <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-0 md:left-8 top-0 bottom-0 w-0.5 bg-accent/30 hidden sm:block"></div>
+            {/* Animated timeline line */}
+            <div className="absolute left-0 md:left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-accent via-secondary to-highlight rounded-full hidden sm:block shadow-glow"></div>
 
             <div className="space-y-12">
               {experiences.map((exp, index) => (
@@ -106,8 +106,8 @@ const Experience = () => {
                   className="relative animate-slide-up"
                   style={{ animationDelay: `${index * 0.15}s` }}
                 >
-                  {/* Timeline dot */}
-                  <div className="absolute left-0 md:left-8 -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background hidden sm:block"></div>
+                  {/* Animated timeline dot */}
+                  <div className="absolute left-0 md:left-8 -translate-x-1/2 w-6 h-6 bg-gradient-primary rounded-full border-4 border-background hidden sm:block shadow-glow animate-pulse" style={{ animationDuration: '2s' }}></div>
 
                   {/* Content card with premium styling */}
                   <div className="sm:ml-0 md:ml-20 premium-card group">

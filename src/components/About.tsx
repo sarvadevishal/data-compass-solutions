@@ -77,9 +77,9 @@ const About = () => {
               ))}
             </div>
 
-            {/* Philosophy quote with premium styling */}
-            <div className="mt-16 p-10 bg-gradient-card border border-accent/30 rounded-2xl animate-fade-in shadow-glow hover:shadow-hover transition-all duration-500">
-              <blockquote className="text-xl md:text-2xl font-quote italic text-foreground/90 text-center leading-relaxed">
+            {/* Philosophy quote with glassmorphism */}
+            <div className="mt-20 p-12 glassmorphism border border-accent/30 rounded-3xl animate-fade-in shadow-xl hover:shadow-glow transition-all duration-500">
+              <blockquote className="text-2xl md:text-3xl font-quote italic text-gradient-primary text-center leading-relaxed">
                 "Great data architecture isn't about fancy tools — it's about understanding business problems deeply and building solutions that scale."
               </blockquote>
             </div>

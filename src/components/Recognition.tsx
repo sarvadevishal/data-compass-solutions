@@ -151,9 +151,9 @@ const Recognition = () => {
           ))}
         </div>
 
-        {/* Leadership Quote */}
-        <div className="mt-16 max-w-4xl mx-auto p-10 bg-gradient-card border border-accent/20 rounded-2xl animate-fade-in shadow-glow">
-          <blockquote className="text-xl md:text-2xl font-quote italic text-foreground/90 text-center leading-relaxed">
+        {/* Leadership Quote with glassmorphism */}
+        <div className="mt-20 max-w-4xl mx-auto p-12 glassmorphism border border-accent/30 rounded-3xl animate-fade-in shadow-xl hover:shadow-glow transition-all duration-500">
+          <blockquote className="text-2xl md:text-3xl font-quote italic text-gradient-primary text-center leading-relaxed">
             "As a Technical Architect, I lead a 7-member data engineering team focused on designing scalable solutions, planning Jira deliverables, conducting code reviews, and collaborating closely with clients."
           </blockquote>
         </div>

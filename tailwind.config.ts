@@ -57,6 +57,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        violet: "hsl(263, 70%, 50%)",
+        amber: "hsl(38, 92%, 50%)",
+        navy: "hsl(223, 47%, 11%)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -64,9 +67,11 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
+        sm: "var(--shadow-sm)",
         soft: "var(--shadow-soft)",
         medium: "var(--shadow-medium)",
         large: "var(--shadow-large)",
+        xl: "var(--shadow-xl)",
         glow: "var(--shadow-glow)",
         hover: "var(--shadow-hover)",
       },

@@ -9,12 +9,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-20">
-      {/* Animated background pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute top-20 left-10 w-64 h-64 border-2 border-accent rounded-full animate-pulse" style={{ animationDuration: '4s' }}></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 border-2 border-highlight rounded-full animate-pulse" style={{ animationDuration: '6s' }}></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-accent/30 rounded-full animate-pulse" style={{ animationDuration: '8s' }}></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-24">
+      {/* Animated gradient mesh background */}
+      <div className="absolute inset-0 bg-gradient-hero bg-gradient-mesh"></div>
+      
+      {/* Animated particles */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }}></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s' }}></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-highlight/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }}></div>
       </div>
       
       {/* Gradient overlay */}
@@ -29,10 +32,10 @@ const Hero = () => {
                 <Sparkles className="w-4 h-4 text-accent" />
                 <span className="text-sm text-accent font-medium">Technical Architect & Big Data Engineer</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-foreground leading-tight">
-                Hi, I'm <span className="text-gradient-accent">Vishal Sarvade</span>
+              <h1 className="text-5xl md:text-6xl lg:text-8xl font-heading font-black text-foreground leading-[1.1] tracking-tight">
+                Hi, I'm <span className="text-gradient-primary animate-fade-in">Vishal Sarvade</span>
               </h1>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-semibold text-foreground/90 leading-tight">
+              <h2 className="text-2xl md:text-3xl lg:text-5xl font-heading font-semibold text-foreground/90 leading-tight">
                 Architecting Scalable Data Platforms That Drive Intelligent Business Decisions
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed max-w-2xl">
@@ -61,16 +64,16 @@ const Hero = () => {
               <Button 
                 size="lg"
                 onClick={() => scrollToSection('experience')}
-                className="group bg-gradient-accent hover:opacity-90 transition-all duration-300 shadow-glow hover:shadow-hover text-lg px-8 py-6"
+                className="group bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover text-lg px-10 py-7 btn-ripple relative overflow-hidden"
               >
-                Explore My Work
-                <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
+                <span className="relative z-10">Explore My Work</span>
+                <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform relative z-10" />
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 onClick={() => scrollToSection('contact')}
-                className="border-2 border-accent/50 hover:bg-accent/10 hover:border-accent transition-all duration-300 text-lg px-8 py-6"
+                className="glassmorphism border-accent/30 hover:bg-accent/10 hover:border-accent hover:scale-105 transition-all duration-300 text-lg px-10 py-7"
               >
                 Let's Connect
               </Button>
@@ -93,22 +96,25 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Professional Image with premium effects */}
+          {/* Professional Image with premium 3D tilt effect */}
           <div className="relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              {/* Multi-layer glow effect */}
-              <div className="absolute -inset-4 bg-gradient-accent opacity-20 rounded-3xl blur-3xl animate-pulse" style={{ animationDuration: '4s' }}></div>
-              <div className="absolute -inset-2 bg-highlight/10 rounded-3xl blur-2xl"></div>
+              {/* Multi-layer animated glow effect */}
+              <div className="absolute -inset-8 bg-gradient-primary opacity-20 rounded-3xl blur-3xl animate-glow-pulse"></div>
+              <div className="absolute -inset-4 bg-secondary/20 rounded-3xl blur-2xl animate-pulse" style={{ animationDuration: '3s' }}></div>
               
-              {/* Image container */}
-              <div className="relative rounded-3xl overflow-hidden border-2 border-accent/40 shadow-large hover:shadow-hover transition-all duration-500 hover:scale-[1.02] hover:border-accent/60">
+              {/* Image container with 3D tilt */}
+              <div className="relative rounded-3xl overflow-hidden border-2 border-accent/40 shadow-xl tilt-3d glassmorphism">
                 <img 
                   src={heroImage}
                   alt="Vishal Sarvade - Technical Architect & Big Data Engineer"
                   className="w-full h-auto object-cover"
+                  loading="eager"
                 />
                 {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent pointer-events-none"></div>
+                {/* Animated border glow */}
+                <div className="absolute inset-0 border-2 border-transparent hover:border-accent/60 rounded-3xl transition-all duration-500"></div>
               </div>
             </div>
           </div>

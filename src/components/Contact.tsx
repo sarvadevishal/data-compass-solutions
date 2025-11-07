@@ -131,16 +131,21 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-gradient-accent hover:opacity-90 transition-all duration-300 shadow-glow hover:shadow-hover text-lg">
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover text-lg py-7 btn-ripple"
+                  aria-label="Submit contact form"
+                >
                   Send Message
                 </Button>
               </form>
             </div>
 
-            {/* Contact info with premium styling */}
+            {/* Contact info with glassmorphism */}
             <div className="space-y-8 animate-slide-in-right">
-              <div className="premium-card">
-                <h3 className="text-2xl font-heading font-bold text-foreground mb-6">
+              <div className="glassmorphism p-10 rounded-3xl border border-accent/30">
+                <h3 className="text-3xl font-heading font-bold text-gradient-primary mb-8">
                   Connect With Me
                 </h3>
                 
@@ -149,7 +154,8 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/vishal-kumar-sarvade-95494989"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-5 bg-accent/10 rounded-xl hover:bg-accent/20 transition-all duration-300 group border border-accent/20 hover:border-accent/40"
+                    className="flex items-center gap-4 p-6 glassmorphism rounded-2xl hover:scale-105 transition-all duration-300 group border border-accent/30 hover:border-accent hover:shadow-glow"
+                    aria-label="Visit LinkedIn profile"
                   >
                     <div className="p-4 bg-gradient-accent rounded-xl group-hover:scale-110 transition-transform duration-300">
                       <Linkedin className="w-6 h-6 text-white" />
@@ -162,7 +168,8 @@ const Contact = () => {
 
                   <a 
                     href="mailto:sarvade1.vishalkumar@gmail.com"
-                    className="flex items-center gap-4 p-5 bg-highlight/10 rounded-xl hover:bg-highlight/20 transition-all duration-300 group border border-highlight/20 hover:border-highlight/40"
+                    className="flex items-center gap-4 p-6 glassmorphism rounded-2xl hover:scale-105 transition-all duration-300 group border border-highlight/30 hover:border-highlight hover:shadow-glow"
+                    aria-label="Send email"
                   >
                     <div className="p-4 bg-gradient-accent rounded-xl group-hover:scale-110 transition-transform duration-300">
                       <Mail className="w-6 h-6 text-white" />
@@ -175,7 +182,8 @@ const Contact = () => {
 
                   <button 
                     onClick={() => toast({ title: "Resume download feature coming soon!" })}
-                    className="flex items-center gap-4 p-5 bg-secondary/10 rounded-xl hover:bg-secondary/20 transition-all duration-300 group w-full text-left border border-secondary/20 hover:border-secondary/40"
+                    className="flex items-center gap-4 p-6 glassmorphism rounded-2xl hover:scale-105 transition-all duration-300 group w-full text-left border border-secondary/30 hover:border-secondary hover:shadow-glow"
+                    aria-label="Download resume"
                   >
                     <div className="p-4 bg-gradient-accent rounded-xl group-hover:scale-110 transition-transform duration-300">
                       <FileText className="w-6 h-6 text-white" />
@@ -188,9 +196,9 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-accent p-8 rounded-2xl text-white text-center shadow-glow hover:shadow-hover transition-all duration-500">
-                <p className="text-sm font-medium mb-2 uppercase tracking-wide">Open to New Opportunities</p>
-                <p className="text-2xl font-heading font-bold">
+              <div className="bg-gradient-primary p-10 rounded-3xl text-white text-center shadow-glow hover:shadow-xl hover:scale-105 transition-all duration-500">
+                <p className="text-sm font-bold mb-3 uppercase tracking-widest">Open to New Opportunities</p>
+                <p className="text-3xl font-heading font-black">
                   Let's Transform Your Data Infrastructure
                 </p>
               </div>

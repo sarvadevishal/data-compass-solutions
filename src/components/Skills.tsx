@@ -123,19 +123,30 @@ const Skills = () => {
                   </h3>
                 </div>
 
-                {/* Skills list */}
-                <div className="space-y-3">
-                  {category.skills.map((skill) => (
+                {/* Interactive skills list with bars */}
+                <div className="space-y-4">
+                  {category.skills.map((skill, skillIdx) => (
                     <div 
                       key={skill.name}
-                      className="flex items-center justify-between gap-3 p-2 rounded-lg hover:bg-accent/5 transition-colors"
+                      className="group"
                     >
-                      <span className="text-muted-foreground text-sm font-medium">
-                        {skill.name}
-                      </span>
-                      <span className={`text-xs px-3 py-1 rounded-full font-semibold ${getLevelColor(skill.level)}`}>
-                        {skill.level}
-                      </span>
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-foreground text-sm font-medium group-hover:text-accent transition-colors">
+                          {skill.name}
+                        </span>
+                        <span className={`text-xs px-3 py-1 rounded-full font-semibold ${getLevelColor(skill.level)}`}>
+                          {skill.level}
+                        </span>
+                      </div>
+                      <div className="skill-bar">
+                        <div 
+                          className="skill-bar-fill"
+                          style={{ 
+                            width: skill.level === 'Expert' ? '100%' : skill.level === 'Advanced' ? '80%' : '60%',
+                            animationDelay: `${(index * 0.1) + (skillIdx * 0.05)}s`
+                          }}
+                        ></div>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -143,9 +154,9 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Core strengths summary with premium styling */}
-          <div className="mt-16 p-10 bg-gradient-card rounded-2xl border border-accent/30 animate-fade-in shadow-glow hover:shadow-hover transition-all duration-500">
-            <h3 className="text-2xl font-heading font-bold text-foreground mb-6 text-center">
+          {/* Core strengths summary with glassmorphism */}
+          <div className="mt-24 p-12 glassmorphism rounded-3xl border border-accent/30 animate-fade-in shadow-xl hover:shadow-glow transition-all duration-500">
+            <h3 className="text-3xl font-heading font-bold text-gradient-primary mb-8 text-center">
               Core Expertise
             </h3>
             <div className="flex flex-wrap justify-center gap-4">

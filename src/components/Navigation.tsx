@@ -22,7 +22,8 @@ const Navigation = () => {
   };
 
   const navLinks = [
-    { id: "about", label: "About" },
+    { id: "executive-summary", label: "Impact" },
+    { id: "about", label: "Overview" },
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "recognition", label: "Recognition" },
@@ -65,8 +66,9 @@ const Navigation = () => {
             <Button
               onClick={() => scrollToSection("contact")}
               className="bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover btn-ripple"
+              aria-label="Schedule a consultation"
             >
-              Let's Connect
+              Schedule Call
             </Button>
           </div>
 
@@ -95,8 +97,9 @@ const Navigation = () => {
               <Button
                 onClick={() => scrollToSection("contact")}
                 className="bg-gradient-accent hover:opacity-90 transition-opacity mt-2"
+                aria-label="Schedule a consultation"
               >
-                Let's Connect
+                Schedule Call
               </Button>
             </div>
           </div>

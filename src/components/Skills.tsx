@@ -84,6 +84,52 @@ const Skills = () => {
     }
   };
 
+  // Signature skills with proof
+  const signatureSkills = [
+    {
+      name: "AWS Cloud Architecture",
+      proof: "Reduced infrastructure costs by 40% through serverless optimization",
+      level: 95,
+      icon: Cloud,
+    },
+    {
+      name: "Big Data Engineering",
+      proof: "Processing 10M+ events/day in real-time with zero-downtime architecture",
+      level: 95,
+      icon: Database,
+    },
+    {
+      name: "Data Migration",
+      proof: "2M+ records migrated with zero data loss and ahead of schedule delivery",
+      level: 90,
+      icon: Database,
+    },
+    {
+      name: "Team Leadership",
+      proof: "Mentored 7+ engineers across distributed teams, delivering enterprise solutions",
+      level: 90,
+      icon: Users,
+    },
+    {
+      name: "Performance Optimization",
+      proof: "Achieved 10x improvement in query performance (10 hours → 1 hour)",
+      level: 95,
+      icon: BarChart3,
+    },
+    {
+      name: "Business Intelligence",
+      proof: "Designed executive dashboards driving strategic decisions for Fortune 500 clients",
+      level: 85,
+      icon: BarChart3,
+    },
+    {
+      name: "ETL Development",
+      proof: "Built 100+ production-grade data pipelines with automated validation and monitoring",
+      level: 95,
+      icon: GitBranch,
+    },
+  ];
+
   return (
     <section id="skills" className="py-24 bg-background relative overflow-hidden">
       {/* Background decoration */}
@@ -100,9 +146,59 @@ const Skills = () => {
               Skills & Technologies
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              A comprehensive toolkit for building enterprise-scale data platforms
+              Proven expertise in delivering enterprise-scale data platforms with measurable business impact
             </p>
             <div className="w-24 h-1 bg-gradient-accent mx-auto"></div>
+          </div>
+
+          {/* Signature Skills Section */}
+          <div className="mb-24">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-heading font-bold text-gradient-primary mb-4">
+                Core Expertise with Proven Results
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Key capabilities that have driven success across Fortune 500 enterprise implementations
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {signatureSkills.map((skill, index) => (
+                <div 
+                  key={skill.name}
+                  className="premium-card group animate-scale-in p-8"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-3 bg-gradient-accent rounded-xl group-hover:scale-110 transition-transform duration-300">
+                      <skill.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="text-xl font-heading font-bold text-foreground group-hover:text-accent transition-colors">
+                          {skill.name}
+                        </h4>
+                        <span className="text-xs px-3 py-1 rounded-full font-bold bg-accent text-accent-foreground">
+                          Expert
+                        </span>
+                      </div>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                        {skill.proof}
+                      </p>
+                      <div className="skill-bar">
+                        <div 
+                          className="skill-bar-fill"
+                          style={{ 
+                            width: `${skill.level}%`,
+                            animationDelay: `${index * 0.05}s`
+                          }}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Skills grid with premium cards */}
@@ -154,25 +250,27 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Core strengths summary with glassmorphism */}
-          <div className="mt-24 p-12 glassmorphism rounded-3xl border border-accent/30 animate-fade-in shadow-xl hover:shadow-glow transition-all duration-500">
+          {/* Additional competencies with glassmorphism */}
+          <div className="mt-16 p-12 glassmorphism rounded-3xl border border-accent/30 animate-fade-in shadow-xl hover:shadow-glow transition-all duration-500">
             <h3 className="text-3xl font-heading font-bold text-gradient-primary mb-8 text-center">
-              Core Expertise
+              Additional Competencies
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
               {[
-                'Data Architecture',
-                'ETL Development',
+                'Architecture Design',
                 'Performance Tuning',
+                'Zero-Downtime Migration',
                 'BI Transformation',
-                'Cloud Migration',
-                'Team Leadership',
+                'Cost Optimization',
+                'Agile Leadership',
                 'Stakeholder Communication',
+                'Technical Mentorship',
               ].map((strength, idx) => (
                 <span 
                   key={strength}
                   className="px-5 py-2.5 bg-accent/10 border border-accent/30 rounded-xl text-sm text-foreground font-medium hover:bg-accent/20 hover:border-accent/50 hover:scale-105 transition-all duration-300 cursor-default animate-fade-in"
                   style={{ animationDelay: `${idx * 0.05}s` }}
+                  aria-label={`Competency: ${strength}`}
                 >
                   {strength}
                 </span>

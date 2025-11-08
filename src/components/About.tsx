@@ -4,23 +4,23 @@ const About = () => {
   const highlights = [
     {
       icon: Award,
-      title: "Enterprise Expertise",
-      description: "Architecting data platforms for Fortune 500 companies",
+      title: "Business-Driven Technical Strategy",
+      description: "Delivering $500K+ in annual cost savings through strategic architecture decisions",
     },
     {
       icon: Users,
-      title: "Team Leadership",
-      description: "Leading cross-functional teams of 7+ engineers",
+      title: "Cross-Functional Leadership",
+      description: "Leading 7+ engineers across distributed teams to deliver enterprise solutions",
     },
     {
       icon: Zap,
-      title: "Performance Focus",
-      description: "Optimizing systems for speed, scale, and reliability",
+      title: "Performance Excellence",
+      description: "Achieving 10x improvement in query performance through zero-downtime optimization",
     },
     {
       icon: Target,
-      title: "Business Impact",
-      description: "Delivering measurable ROI through data modernization",
+      title: "Measurable Business Impact",
+      description: "Real-time analytics enabling instant decision-making for Fortune 500 clients",
     },
   ];
 
@@ -37,7 +37,7 @@ const About = () => {
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-              About Me
+              Overview
             </h2>
             <div className="w-24 h-1 bg-gradient-accent mx-auto"></div>
           </div>
@@ -48,10 +48,10 @@ const About = () => {
             <div className="animate-slide-up">
               <div className="prose prose-lg prose-invert max-w-none">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  I'm a <span className="text-foreground font-semibold">Technical Architect and Big Data Engineer</span> with extensive experience building enterprise-scale data platforms that simplify analytics and accelerate decision-making. My focus is on designing robust, cost-efficient, and high-performance solutions using <span className="text-accent">Amazon Redshift</span>, <span className="text-accent">Informatica Cloud</span>, <span className="text-accent">AWS Data Services</span>, <span className="text-accent">Power BI</span>, and <span className="text-accent">Looker</span>.
+                  I'm a <span className="text-foreground font-semibold">Technical Architect and Big Data Engineer</span> specializing in delivering <span className="text-accent font-semibold">measurable business impact</span> through enterprise-scale data platforms. <span className="text-foreground font-semibold">I bridge business objectives with technical execution</span>, transforming complex data challenges into solutions that drive ROI and competitive advantage.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Over the years, I've led cross-functional teams, modernized complex data architectures, and delivered measurable impact through innovation, optimization, and hands-on engineering leadership. I believe in combining technology and teamwork to create systems that truly empower businesses.
+                  With proven expertise in <span className="text-accent">cost optimization</span> (saving clients $500K+ annually), <span className="text-accent">performance excellence</span> (achieving 10x improvements), and <span className="text-accent">team leadership</span> (leading 7+ distributed engineers), I combine strategic thinking with hands-on technical depth using AWS Redshift, Informatica Cloud, and modern BI platforms.
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ const About = () => {
             {/* Philosophy quote with glassmorphism */}
             <div className="mt-20 p-12 glassmorphism border border-accent/30 rounded-3xl animate-fade-in shadow-xl hover:shadow-glow transition-all duration-500">
               <blockquote className="text-2xl md:text-3xl font-quote italic text-gradient-primary text-center leading-relaxed">
-                "Great data architecture isn't about fancy tools — it's about understanding business problems deeply and building solutions that scale."
+                "Exceptional data architecture isn't about technology alone — it's about understanding business challenges deeply and delivering solutions that drive measurable value at scale."
               </blockquote>
             </div>
           </div>

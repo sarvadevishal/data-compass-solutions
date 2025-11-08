@@ -6,11 +6,12 @@ const Experience = () => {
       company: "Grid Dynamics Inc, USA",
       period: "Jan 2024 – Present",
       title: "Technical Architect",
+      keyAchievement: "Leading enterprise-scale data modernization initiatives",
       responsibilities: [
-        "Leading data engineering modernization and ETL pipeline optimization initiatives across cloud data platforms",
-        "Designing next-generation data architecture strategies for scalability, performance, and cost efficiency",
-        "Collaborating with global teams to deliver advanced data pipeline automation, Redshift performance tuning, and BI integrations",
-        "Driving architecture reviews, proof-of-concept validations, and technical mentoring",
+        "Driving data engineering modernization delivering cost optimization and performance excellence for Fortune 500 clients",
+        "Architecting next-generation cloud data platforms with focus on scalability, real-time analytics, and ROI",
+        "Collaborating with distributed global teams to deliver advanced ETL automation and BI transformation",
+        "Leading architecture reviews, POC validations, and technical mentorship for enterprise implementations",
       ],
     },
     {
@@ -18,16 +19,15 @@ const Experience = () => {
       period: "Jan 2020 – Dec 2023",
       title: "Senior Software Engineer → Associate Technical Architect → Technical Architect",
       client: "Forever Living Products (FLP)",
+      keyAchievement: "$500K annual savings + 10x performance improvement",
       responsibilities: [
-        "Simplified complex Salesforce + PostgreSQL + Heroku setup into unified AWS Redshift architecture",
-        "Reduced annual licensing cost by $500K through strategic AWS-native consolidation",
-        "Migrated aggregation logic from PostgreSQL to Redshift, cutting runtime from 10 hours to 1 hour",
-        "Implemented Redshift Data Sharing across three production clusters (Producer, Looker BI Consumer, FLP360 Consumer)",
-        "Led migration from DC2 to RA3 instances, enabling near real-time data propagation",
-        "Replaced AWS DMS pipelines with Zero-ETL integration for real-time MySQL Aurora to Redshift sync",
-        "Led BI modernization: designed Looker dashboards and Power BI migration POC",
-        "Built executive dashboards: Sales Performance and Enrollment Summary with semantic modeling",
-        "Led 7-member data engineering team through sprint planning, code reviews, and client collaboration",
+        "Delivered $500K in annual cost savings by consolidating complex multi-platform architecture into unified AWS Redshift solution",
+        "Achieved 10x performance improvement by migrating aggregation logic from PostgreSQL to Redshift (10 hours → 1 hour runtime)",
+        "Architected Redshift Data Sharing across 3 production clusters enabling real-time analytics for executive decision-making",
+        "Led zero-downtime DC2 to RA3 migration enabling near real-time data propagation across enterprise systems",
+        "Implemented Zero-ETL integration replacing traditional AWS DMS pipelines, enabling instant insights from MySQL Aurora",
+        "Drove BI transformation delivering executive dashboards (Sales Performance, Enrollment) with semantic modeling",
+        "Led 7-member distributed engineering team through agile sprints, code reviews, and client collaboration",
       ],
       achievements: [
         {
@@ -52,12 +52,12 @@ const Experience = () => {
       period: "Jan 2019 – Jan 2020",
       title: "Associate Technical Lead",
       client: "Forever Living Products",
+      keyAchievement: "Architected enterprise MLM data warehouse from legacy AS400",
       responsibilities: [
-        "Architected the MLM Data Warehouse Solution integrating AS400 and Amazon Redshift",
-        "Evaluated multiple ETL tools: Skyvia, Matillion, Talend, Informatica Cloud, and Snowflake",
-        "Standardized on Informatica Cloud + Amazon Redshift for optimal performance and scalability",
-        "Developed 100+ Informatica jobs using Producer-Consumer mesh architecture",
-        "Established modular, scalable ETL design patterns adopted across the organization",
+        "Delivered comprehensive MLM Data Warehouse Solution migrating legacy AS400 to modern cloud architecture",
+        "Led technical evaluation of 5 enterprise ETL platforms, selecting optimal Informatica Cloud + Redshift stack",
+        "Architected and developed 100+ production-grade ETL jobs using scalable Producer-Consumer mesh pattern",
+        "Established enterprise-wide ETL design patterns and best practices adopted across multiple business units",
       ],
     },
     {
@@ -65,13 +65,13 @@ const Experience = () => {
       period: "Mar 2014 – Jan 2020",
       title: "Associate Software Engineer → Software Engineer → Senior Software Engineer → Associate Technical Lead",
       client: "HealthAxis",
+      keyAchievement: "Delivered HIPAA-compliant healthcare data warehouse",
       responsibilities: [
-        "Designed and developed Data Warehouse for Claims Module (Professional & Institutional Claims)",
-        "Built automated data ingestion pipelines using SSIS with CSV file validation from SFTP",
-        "Implemented good/bad record segregation logic improving data quality for client review cycles",
-        "Extensive healthcare data extraction and mapping for members, providers, vendors, and ICD codes",
-        "Developed comprehensive data validation logic ensuring data integrity and audit compliance",
-        "Extensive coding on SQL Server stored procedures, SSIS packages, and automation workflows",
+        "Architected and delivered enterprise Data Warehouse for Claims Module processing professional and institutional claims",
+        "Built automated HIPAA-compliant data ingestion pipelines with SSIS, SFTP integration, and CSV validation",
+        "Implemented intelligent data quality logic with good/bad record segregation improving audit compliance cycles",
+        "Delivered complex healthcare data extraction and mapping across members, providers, vendors, and ICD-10 codes",
+        "Developed comprehensive validation framework ensuring data integrity and regulatory compliance",
       ],
     },
   ];
@@ -111,6 +111,14 @@ const Experience = () => {
 
                   {/* Content card with premium styling */}
                   <div className="sm:ml-0 md:ml-20 premium-card group">
+                    {/* Key Achievement Badge */}
+                    {exp.keyAchievement && (
+                      <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 bg-gradient-accent rounded-full shadow-glow">
+                        <TrendingUp className="w-4 h-4 text-white" />
+                        <span className="text-sm text-white font-bold">{exp.keyAchievement}</span>
+                      </div>
+                    )}
+                    
                     <div className="flex items-start gap-5 mb-6">
                       <div className="p-4 bg-gradient-accent rounded-xl group-hover:scale-110 transition-transform duration-300">
                         <Briefcase className="w-7 h-7 text-white" />

@@ -28,18 +28,19 @@ const Hero = () => {
           {/* Content */}
           <div className="text-left space-y-8 animate-fade-in">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/30 rounded-full mb-4 animate-fade-in">
-                <Sparkles className="w-4 h-4 text-accent" />
-                <span className="text-sm text-accent font-medium">Technical Architect & Big Data Engineer</span>
+              {/* Impact statement */}
+              <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-accent rounded-full mb-4 animate-fade-in shadow-glow">
+                <Sparkles className="w-5 h-5 text-white" />
+                <span className="text-sm text-white font-bold tracking-wide">Delivered $500K+ in Cost Savings Through Data Architecture Optimization</span>
               </div>
               <h1 className="text-5xl md:text-6xl lg:text-8xl font-heading font-black text-foreground leading-[1.1] tracking-tight">
                 Hi, I'm <span className="text-gradient-primary animate-fade-in">Vishal Sarvade</span>
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-5xl font-heading font-semibold text-foreground/90 leading-tight">
-                Architecting Scalable Data Platforms That Drive Intelligent Business Decisions
+                Technical Architect Specializing in Turning Complex Data Challenges into Scalable, Cost-Effective Solutions
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed max-w-2xl">
-                Specializing in end-to-end data ecosystems, performance optimization, and analytics modernization with proven expertise in AWS, Redshift, and enterprise-scale data architecture.
+                Proven expertise in architecting enterprise-scale data platforms that deliver measurable ROI through performance optimization, cloud modernization, and real-time analytics.
               </p>
             </div>
 
@@ -63,10 +64,11 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg"
-                onClick={() => scrollToSection('experience')}
+                onClick={() => scrollToSection('executive-summary')}
                 className="group bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover text-lg px-10 py-7 btn-ripple relative overflow-hidden"
+                aria-label="View executive summary and key metrics"
               >
-                <span className="relative z-10">Explore My Work</span>
+                <span className="relative z-10">View Impact & Results</span>
                 <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform relative z-10" />
               </Button>
               <Button 
@@ -74,8 +76,9 @@ const Hero = () => {
                 size="lg"
                 onClick={() => scrollToSection('contact')}
                 className="glassmorphism border-accent/30 hover:bg-accent/10 hover:border-accent hover:scale-105 transition-all duration-300 text-lg px-10 py-7"
+                aria-label="Contact Vishal Sarvade"
               >
-                Let's Connect
+                Schedule a Consultation
               </Button>
             </div>
 

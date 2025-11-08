@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Linkedin, Mail, FileText } from "lucide-react";
+import { Linkedin, Mail, FileText, CheckCircle2 } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -67,12 +67,50 @@ const Contact = () => {
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-              Let's Collaborate on Scalable Data Engineering Solutions
+              Let's Build Something Exceptional Together
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Ready to discuss your next data challenge? Whether you're scaling your data infrastructure, optimizing performance, or building from scratch — I'd love to connect.
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
+              Whether you're scaling your data infrastructure or optimizing existing systems, I bring proven expertise in delivering high-impact solutions that drive measurable business results.
             </p>
+            <div className="flex flex-wrap justify-center gap-8 mb-8 text-sm">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
+                <span className="text-muted-foreground">Response within 24 hours</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
+                <span className="text-muted-foreground">Available for consultation</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
+                <span className="text-muted-foreground">Open to new opportunities</span>
+              </div>
+            </div>
             <div className="w-24 h-1 bg-gradient-accent mx-auto"></div>
+          </div>
+
+          {/* Value Proposition */}
+          <div className="mb-12 p-8 glassmorphism rounded-3xl border border-accent/30 animate-fade-in">
+            <h3 className="text-2xl font-heading font-bold text-gradient-primary mb-6 text-center">
+              Best Suited For
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                "Data Platform Migrations",
+                "Cloud Architecture Optimization",
+                "Real-Time Analytics Implementation",
+                "Technical Leadership & Mentorship",
+              ].map((item, idx) => (
+                <div 
+                  key={item}
+                  className="flex items-center gap-3 p-4 bg-accent/5 rounded-xl border border-accent/20 hover:border-accent/40 hover:bg-accent/10 transition-all duration-300"
+                  style={{ animationDelay: `${idx * 0.1}s` }}
+                >
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
+                  <span className="text-sm text-foreground font-medium">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -137,8 +175,11 @@ const Contact = () => {
                   className="w-full bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover text-lg py-7 btn-ripple"
                   aria-label="Submit contact form"
                 >
-                  Send Message
+                  Start the Conversation
                 </Button>
+                <p className="text-xs text-center text-muted-foreground mt-2">
+                  Share your challenge, and I'll outline how I can help
+                </p>
               </form>
             </div>
 
@@ -197,9 +238,12 @@ const Contact = () => {
               </div>
 
               <div className="bg-gradient-primary p-10 rounded-3xl text-white text-center shadow-glow hover:shadow-xl hover:scale-105 transition-all duration-500">
-                <p className="text-sm font-bold mb-3 uppercase tracking-widest">Open to New Opportunities</p>
-                <p className="text-3xl font-heading font-black">
+                <p className="text-sm font-bold mb-3 uppercase tracking-widest">Ready to Drive Impact</p>
+                <p className="text-3xl font-heading font-black mb-4">
                   Let's Transform Your Data Infrastructure
+                </p>
+                <p className="text-sm opacity-90">
+                  Delivering solutions that combine technical excellence with measurable business value
                 </p>
               </div>
             </div>

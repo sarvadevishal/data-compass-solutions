@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -63,6 +63,14 @@ const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></span>
               </button>
             ))}
+            <div className="flex items-center gap-2">
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                <Github className="w-5 h-5" />
+              </a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
             <Button
               onClick={() => scrollToSection("contact")}
               className="bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover btn-ripple"

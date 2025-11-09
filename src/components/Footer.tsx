@@ -1,3 +1,5 @@
+import { Github, Linkedin, Mail } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -54,10 +56,23 @@ const Footer = () => {
           </div>
 
           {/* Bottom bar */}
-          <div className="pt-8 border-t border-primary-foreground/20 text-center">
-            <p className="text-sm text-primary-foreground/70">
-              © {currentYear} Vishal Sarvade. All rights reserved.
-            </p>
+          <div className="pt-8 border-t border-primary-foreground/20">
+            <div className="flex flex-col items-center gap-4">
+              <div className="flex gap-4">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  <Github className="w-5 h-5" />
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="mailto:your.email@example.com" className="hover:text-accent transition-colors">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
+              <p className="text-sm text-primary-foreground/70">
+                © {currentYear} Vishal Sarvade. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>

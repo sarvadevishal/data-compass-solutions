@@ -9,9 +9,10 @@ const Experience = () => {
       keyAchievement: "Leading enterprise-scale data modernization initiatives",
       responsibilities: [
         "Driving data engineering modernization delivering cost optimization and performance excellence for Fortune 500 clients",
-        "Architecting next-generation cloud data platforms with focus on scalability, real-time analytics, and ROI",
-        "Collaborating with distributed global teams to deliver advanced ETL automation and BI transformation",
-        "Leading architecture reviews, POC validations, and technical mentorship for enterprise implementations",
+        "Architecting next-generation cloud data platforms with focus on scalability, real-time analytics, and measurable ROI",
+        "Tuning Amazon Redshift for performance and scalability through schema optimization, indexing, and workload management improvements",
+        "Leading architecture reviews, POC validations, and technical mentorship for distributed engineering teams",
+        "Collaborating with business and product teams to translate functional requirements into robust data architecture designs",
       ],
     },
     {
@@ -26,8 +27,11 @@ const Experience = () => {
         "Architected Redshift Data Sharing across 3 production clusters enabling real-time analytics for executive decision-making",
         "Led zero-downtime DC2 to RA3 migration enabling near real-time data propagation across enterprise systems",
         "Implemented Zero-ETL integration replacing traditional AWS DMS pipelines, enabling instant insights from MySQL Aurora",
+        "Delivered AWS DMS migration frameworks enabling seamless, low-downtime transitions between heterogeneous database environments",
         "Drove BI transformation delivering executive dashboards (Sales Performance, Enrollment) with semantic modeling",
-        "Led 7-member distributed engineering team through agile sprints, code reviews, and client collaboration",
+        "Established data quality, validation, and auditing processes ensuring integrity and traceability across all data layers",
+        "Led 7-member distributed engineering team through agile sprints, code reviews, and technical mentorship",
+        "Directed offshore production support teams, overseeing SLAs, release cycles, and proactive incident management",
       ],
       achievements: [
         {
@@ -56,7 +60,11 @@ const Experience = () => {
       responsibilities: [
         "Delivered comprehensive MLM Data Warehouse Solution migrating legacy AS400 to modern cloud architecture",
         "Led technical evaluation of 5 enterprise ETL platforms, selecting optimal Informatica Cloud + Redshift stack",
+        "Designed and implemented enterprise-scale data pipelines using Informatica Cloud to extract, transform, and load data efficiently from multiple business systems",
         "Architected and developed 100+ production-grade ETL jobs using scalable Producer-Consumer mesh pattern",
+        "Built and optimized ETL workflows that automate cross-platform data movement while maintaining high reliability and throughput",
+        "Managed Informatica Cloud Secure Agent configuration and Redshift integration pipelines, ensuring stable, high-volume operations",
+        "Partnered with customers and project managers to finalize technical specifications and deployment strategies",
         "Established enterprise-wide ETL design patterns and best practices adopted across multiple business units",
       ],
     },
@@ -71,7 +79,10 @@ const Experience = () => {
         "Built automated HIPAA-compliant data ingestion pipelines with SSIS, SFTP integration, and CSV validation",
         "Implemented intelligent data quality logic with good/bad record segregation improving audit compliance cycles",
         "Delivered complex healthcare data extraction and mapping across members, providers, vendors, and ICD-10 codes",
+        "Engineered AWS Data Pipelines for consistent data flow from PostgreSQL to Redshift with near-real-time synchronization",
+        "Designed and implemented data auditing and lineage frameworks to provide visibility and governance across all environments",
         "Developed comprehensive validation framework ensuring data integrity and regulatory compliance",
+        "Recognized by clients for accuracy, transparency, and proactive resolution during requirement, testing, and deployment phases",
       ],
     },
   ];

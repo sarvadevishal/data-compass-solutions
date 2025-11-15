@@ -30,8 +30,10 @@ const Experience = () => {
         "Delivered AWS DMS migration frameworks enabling seamless, low-downtime transitions between heterogeneous database environments",
         "Drove BI transformation delivering executive dashboards (Sales Performance, Enrollment) with semantic modeling",
         "Established data quality, validation, and auditing processes ensuring integrity and traceability across all data layers",
-        "Led 7-member distributed engineering team through agile sprints, code reviews, and technical mentorship",
-        "Directed offshore production support teams, overseeing SLAs, release cycles, and proactive incident management",
+        "Built custom ETL pipelines using ETL Works to orchestrate complex multi-source data flows with automated triggers and validation",
+        "Implemented AWS DMS for near real-time MySQL Aurora to Redshift replication, enabling instant data availability for executive dashboards",
+        "Collaborated with 7-person engineering team distributed across US and India, delivering production pipelines through agile sprints and code reviews",
+        "Coordinated with offshore production support teams for release cycles, SLA management, and proactive incident resolution",
       ],
       achievements: [
         {

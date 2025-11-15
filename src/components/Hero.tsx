@@ -74,11 +74,11 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => scrollToSection('contact')}
+                onClick={() => window.open('https://calendly.com/vishalsarvade/consultation', '_blank')}
                 className="glassmorphism border-2 border-accent/30 hover:bg-accent/10 hover:border-accent hover:scale-105 transition-all duration-300 text-lg px-10 py-7 font-bold"
-                aria-label="Contact Vishal Sarvade"
+                aria-label="Schedule a consultation call"
               >
-                Let's Talk Architecture
+                Schedule Call
               </Button>
             </div>
 

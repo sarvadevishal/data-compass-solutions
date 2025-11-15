@@ -74,7 +74,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => window.location.href = 'mailto:vishalsarvade@example.com?subject=Data%20Architecture%20Consultation%20Request'}
+                onClick={() => window.location.href = 'mailto:sarvade1.vishalkumar@gmail.com?subject=Data%20Architecture%20Consultation%20Request'}
                 className="glassmorphism border-2 border-accent/30 hover:bg-accent/10 hover:border-accent hover:scale-105 transition-all duration-300 text-lg px-10 py-7 font-bold"
                 aria-label="Send me an email"
               >

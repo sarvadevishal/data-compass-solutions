@@ -68,7 +68,7 @@ const Navigation = () => {
               </a>
             </div>
             <Button
-              onClick={() => window.location.href = 'mailto:vishalsarvade@example.com?subject=Data%20Architecture%20Consultation%20Request'}
+              onClick={() => window.location.href = 'mailto:sarvade1.vishalkumar@gmail.com?subject=Data%20Architecture%20Consultation%20Request'}
               className="bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover btn-ripple"
               aria-label="Send me an email"
             >
@@ -99,7 +99,7 @@ const Navigation = () => {
                 </button>
               ))}
               <Button
-                onClick={() => window.location.href = 'mailto:vishalsarvade@example.com?subject=Data%20Architecture%20Consultation%20Request'}
+                onClick={() => window.location.href = 'mailto:sarvade1.vishalkumar@gmail.com?subject=Data%20Architecture%20Consultation%20Request'}
                 className="bg-gradient-accent hover:opacity-90 transition-opacity mt-2"
                 aria-label="Send me an email"
               >

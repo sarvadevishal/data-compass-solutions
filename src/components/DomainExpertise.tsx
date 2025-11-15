@@ -14,8 +14,8 @@ const DomainExpertise = () => {
     {
       icon: TrendingUp,
       title: "Multi-Level Marketing (MLM) Analytics",
-      description: "Architected real-time distributor network analytics and commission systems delivering $500K+ in annual savings. Enabled executive decision-making through instant insights into sales hierarchy, performance metrics, and compensation calculations across global operations.",
-      impact: "$500K cost savings + real-time decision-making",
+      description: "Architected real-time distributor network analytics and commission systems delivering $100K+ in annual savings. Enabled executive decision-making through instant insights into sales hierarchy, performance metrics, and compensation calculations across global operations.",
+      impact: "$100K cost savings + real-time decision-making",
       industries: "Direct Sales, E-commerce",
       color: "text-green-500",
       bgColor: "bg-green-500/10",

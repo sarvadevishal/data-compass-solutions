@@ -68,9 +68,9 @@ const Navigation = () => {
               </a>
             </div>
             <Button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => window.open('https://calendly.com/vishalsarvade/consultation', '_blank')}
               className="bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover btn-ripple"
-              aria-label="Schedule a consultation"
+              aria-label="Schedule a consultation call"
             >
               Schedule Call
             </Button>
@@ -99,9 +99,9 @@ const Navigation = () => {
                 </button>
               ))}
               <Button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => window.open('https://calendly.com/vishalsarvade/consultation', '_blank')}
                 className="bg-gradient-accent hover:opacity-90 transition-opacity mt-2"
-                aria-label="Schedule a consultation"
+                aria-label="Schedule a consultation call"
               >
                 Schedule Call
               </Button>

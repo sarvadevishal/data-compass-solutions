@@ -20,9 +20,9 @@ const Experience = () => {
       period: "Jan 2020 – Dec 2023",
       title: "Senior Software Engineer → Associate Technical Architect → Technical Architect",
       client: "Forever Living Products (FLP)",
-      keyAchievement: "$500K annual savings + 10x performance improvement",
+      keyAchievement: "$100K annual savings + 10x performance improvement",
       responsibilities: [
-        "Delivered $500K in annual cost savings by consolidating complex multi-platform architecture into unified AWS Redshift solution",
+        "Delivered $100K in annual cost savings by consolidating complex multi-platform architecture into unified AWS Redshift solution",
         "Achieved 10x performance improvement by migrating aggregation logic from PostgreSQL to Redshift (10 hours → 1 hour runtime)",
         "Architected Redshift Data Sharing across 3 production clusters enabling real-time analytics for executive decision-making",
         "Led zero-downtime DC2 to RA3 migration enabling near real-time data propagation across enterprise systems",
@@ -36,7 +36,7 @@ const Experience = () => {
       achievements: [
         {
           title: "Cost Optimization",
-          impact: "$500K annual savings through architecture simplification",
+          impact: "$100K annual savings through architecture simplification",
           icon: TrendingUp,
         },
         {

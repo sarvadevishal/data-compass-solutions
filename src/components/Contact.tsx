@@ -192,7 +192,7 @@ const Contact = () => {
                 
                 <div className="space-y-4">
                   <a 
-                    href="https://www.linkedin.com/in/vishal-kumar-sarvade-95494989"
+                    href="https://www.linkedin.com/in/vishalkumarsarvade"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-6 glassmorphism rounded-2xl hover:scale-105 transition-all duration-300 group border border-accent/30 hover:border-accent hover:shadow-glow"

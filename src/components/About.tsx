@@ -1,11 +1,11 @@
-import { Award, Users, Zap, Target } from "lucide-react";
+import { Award, Users, Zap, Target, Linkedin } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
       icon: Award,
       title: "Business-Driven Technical Strategy",
-      description: "Delivering $500K+ in annual cost savings through strategic architecture decisions",
+      description: "Reduced operational and architectural expenses by over 100K+ annually through targeted optimizations",
     },
     {
       icon: Users,
@@ -51,7 +51,7 @@ const About = () => {
                   I'm a <span className="text-foreground font-semibold">Technical Architect and Big Data Engineer</span> specializing in delivering <span className="text-accent font-semibold">measurable business impact</span> through enterprise-scale data platforms. <span className="text-foreground font-semibold">I bridge business objectives with technical execution</span>, transforming complex data challenges into solutions that drive ROI and competitive advantage.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  With proven expertise in <span className="text-accent">cost optimization</span> (saving clients $500K+ annually), <span className="text-accent">performance excellence</span> (achieving 10x improvements), and <span className="text-accent">team leadership</span> (leading 7+ distributed engineers), I combine strategic thinking with hands-on technical depth using AWS Redshift, Informatica Cloud, and modern BI platforms.
+                  With proven expertise in <span className="text-accent">cost optimization</span> (reducing expenses by over 100K+ annually), <span className="text-accent">performance excellence</span> (achieving 10x improvements), and <span className="text-accent">team leadership</span> (leading 7+ distributed engineers), I combine strategic thinking with hands-on technical depth using AWS Redshift, Informatica Cloud, and modern BI platforms.
                 </p>
               </div>
             </div>
@@ -79,9 +79,21 @@ const About = () => {
 
             {/* Philosophy quote with glassmorphism */}
             <div className="mt-20 p-12 glassmorphism border border-accent/30 rounded-3xl animate-fade-in shadow-xl hover:shadow-glow transition-all duration-500">
-              <blockquote className="text-2xl md:text-3xl font-quote italic text-gradient-primary text-center leading-relaxed">
+              <blockquote className="text-2xl md:text-3xl font-quote italic text-gradient-primary text-center leading-relaxed mb-8">
                 "Exceptional data architecture isn't about technology alone — it's about understanding business challenges deeply and delivering solutions that drive measurable value at scale."
               </blockquote>
+              <div className="flex justify-center mt-6">
+                <a
+                  href="https://www.linkedin.com/in/vishalkumarsarvade"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-accent rounded-full hover:scale-105 transition-all duration-300 shadow-glow text-white font-semibold"
+                  aria-label="Connect on LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  <span>Connect on LinkedIn</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

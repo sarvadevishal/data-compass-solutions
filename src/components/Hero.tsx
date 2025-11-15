@@ -31,7 +31,7 @@ const Hero = () => {
               {/* Impact statement */}
               <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-accent rounded-full mb-4 animate-fade-in shadow-glow">
                 <Sparkles className="w-5 h-5 text-white" />
-                <span className="text-sm text-white font-bold tracking-wide">Delivered $500K+ in Cost Savings Through Data Architecture Optimization</span>
+                <span className="text-sm text-white font-bold tracking-wide">Reduced operational and architectural expenses by over 100K+ annually through targeted optimizations</span>
               </div>
               <h1 className="text-5xl md:text-6xl lg:text-8xl font-heading font-black text-foreground leading-[1.1] tracking-tight">
                 Hi, I'm <span className="text-gradient-primary animate-fade-in">Vishal Sarvade</span>

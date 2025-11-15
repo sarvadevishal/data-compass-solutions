@@ -68,11 +68,11 @@ const Navigation = () => {
               </a>
             </div>
             <Button
-              onClick={() => window.open('https://calendly.com/vishalsarvade/consultation', '_blank')}
+              onClick={() => window.location.href = 'mailto:vishalsarvade@example.com?subject=Data%20Architecture%20Consultation%20Request'}
               className="bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover btn-ripple"
-              aria-label="Schedule a consultation call"
+              aria-label="Send me an email"
             >
-              Schedule Call
+              Get in Touch
             </Button>
           </div>
 
@@ -99,11 +99,11 @@ const Navigation = () => {
                 </button>
               ))}
               <Button
-                onClick={() => window.open('https://calendly.com/vishalsarvade/consultation', '_blank')}
+                onClick={() => window.location.href = 'mailto:vishalsarvade@example.com?subject=Data%20Architecture%20Consultation%20Request'}
                 className="bg-gradient-accent hover:opacity-90 transition-opacity mt-2"
-                aria-label="Schedule a consultation call"
+                aria-label="Send me an email"
               >
-                Schedule Call
+                Get in Touch
               </Button>
             </div>
           </div>

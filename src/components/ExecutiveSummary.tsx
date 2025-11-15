@@ -6,10 +6,10 @@ const ExecutiveSummary = () => {
     {
       icon: DollarSign,
       title: "Cost Optimization",
-      value: 500,
+      value: 100,
       suffix: "K+",
       prefix: "$",
-      description: "Annual infrastructure savings through strategic AWS consolidation",
+      description: "Reduced operational and architectural expenses annually through targeted optimizations",
       color: "text-green-500",
       bgColor: "bg-green-500/10",
     },

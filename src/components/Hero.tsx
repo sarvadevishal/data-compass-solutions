@@ -29,34 +29,34 @@ const Hero = () => {
           <div className="text-left space-y-8 animate-fade-in">
             <div className="space-y-4">
               {/* Impact statement */}
-              <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-accent rounded-full mb-4 animate-fade-in shadow-glow">
+              <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-accent rounded-full mb-6 animate-fade-in shadow-glow">
                 <Sparkles className="w-5 h-5 text-white" />
-                <span className="text-sm text-white font-bold tracking-wide">Reduced operational and architectural expenses by over 100K+ annually through targeted optimizations</span>
+                <span className="text-sm text-white font-bold tracking-wide">$100K+ Annual Savings • 10x Performance Gains • Zero-Downtime Migrations</span>
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-8xl font-heading font-black text-foreground leading-[1.1] tracking-tight">
-                Hi, I'm <span className="text-gradient-primary animate-fade-in">Vishal Sarvade</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-black text-foreground leading-[1.05] tracking-tight mb-6">
+                <span className="text-gradient-primary animate-fade-in">Vishal Sarvade</span>
               </h1>
-              <h2 className="text-2xl md:text-3xl lg:text-5xl font-heading font-semibold text-foreground/90 leading-tight">
-                Technical Architect Specializing in Turning Complex Data Challenges into Scalable, Cost-Effective Solutions
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground leading-[1.15] mb-6">
+                I Fix Expensive, Slow Data Platforms
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed max-w-2xl">
-                Proven expertise in architecting enterprise-scale data platforms that deliver measurable ROI through performance optimization, cloud modernization, and real-time analytics.
+              <p className="text-xl md:text-2xl text-muted-foreground font-normal leading-relaxed max-w-2xl">
+                Senior Technical Architect who eliminates cost bloat, speeds up analytics by 10x, and builds cloud data systems that scale without breaking.
               </p>
             </div>
 
             {/* Key highlights with animated icons */}
-            <div className="flex flex-wrap gap-6 text-sm">
-              <div className="flex items-center gap-3 px-4 py-3 bg-card/50 border border-border rounded-lg hover-lift">
+            <div className="flex flex-wrap gap-4 text-sm">
+              <div className="flex items-center gap-3 px-5 py-3 bg-card/80 border border-accent/30 rounded-lg hover-lift shadow-md">
                 <Database className="w-6 h-6 text-accent animate-pulse" style={{ animationDuration: '3s' }} />
-                <span className="text-foreground font-medium">10+ Years Experience</span>
+                <span className="text-foreground font-semibold">10+ Years Building Enterprise Systems</span>
               </div>
-              <div className="flex items-center gap-3 px-4 py-3 bg-card/50 border border-border rounded-lg hover-lift">
+              <div className="flex items-center gap-3 px-5 py-3 bg-card/80 border border-accent/30 rounded-lg hover-lift shadow-md">
                 <Cloud className="w-6 h-6 text-accent animate-pulse" style={{ animationDuration: '3.5s' }} />
-                <span className="text-foreground font-medium">AWS & Cloud Expert</span>
+                <span className="text-foreground font-semibold">AWS Redshift • Snowflake • Databricks</span>
               </div>
-              <div className="flex items-center gap-3 px-4 py-3 bg-card/50 border border-border rounded-lg hover-lift">
+              <div className="flex items-center gap-3 px-5 py-3 bg-card/80 border border-accent/30 rounded-lg hover-lift shadow-md">
                 <BarChart3 className="w-6 h-6 text-accent animate-pulse" style={{ animationDuration: '4s' }} />
-                <span className="text-foreground font-medium">BI & Analytics Leader</span>
+                <span className="text-foreground font-semibold">Led 7+ Engineering Teams</span>
               </div>
             </div>
 
@@ -65,20 +65,20 @@ const Hero = () => {
               <Button 
                 size="lg"
                 onClick={() => scrollToSection('executive-summary')}
-                className="group bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover text-lg px-10 py-7 btn-ripple relative overflow-hidden"
+                className="group bg-gradient-primary hover:scale-105 transition-all duration-300 shadow-glow hover:shadow-hover text-lg px-10 py-7 btn-ripple relative overflow-hidden font-bold"
                 aria-label="View executive summary and key metrics"
               >
-                <span className="relative z-10">View Impact & Results</span>
+                <span className="relative z-10">See the Numbers</span>
                 <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform relative z-10" />
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 onClick={() => scrollToSection('contact')}
-                className="glassmorphism border-accent/30 hover:bg-accent/10 hover:border-accent hover:scale-105 transition-all duration-300 text-lg px-10 py-7"
+                className="glassmorphism border-2 border-accent/30 hover:bg-accent/10 hover:border-accent hover:scale-105 transition-all duration-300 text-lg px-10 py-7 font-bold"
                 aria-label="Contact Vishal Sarvade"
               >
-                Schedule a Consultation
+                Let's Talk Architecture
               </Button>
             </div>
 

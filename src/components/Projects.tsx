@@ -39,6 +39,18 @@ const Projects = () => {
       color: "text-red-500",
       bgColor: "bg-red-500/10",
     },
+    {
+      icon: Database,
+      title: "Near Real-Time Data Replication with AWS DMS",
+      challenge: "Business needed instant data availability from MySQL Aurora to Redshift for executive dashboards, but traditional ETL had 12-24 hour delays",
+      solution: "Implemented AWS DMS for continuous replication from MySQL Aurora to Redshift, replacing batch ETL with near real-time data flow",
+      impact: "Reduced data latency from 12-24 hours to under 1 hour, enabling same-day decision-making",
+      businessImpact: "Executives gained instant visibility into sales performance, enrollment trends, and operational metrics",
+      metrics: ["<1 hour latency", "Zero data loss", "24/7 uptime"],
+      tech: ["AWS DMS", "MySQL Aurora", "Amazon Redshift", "CDC"],
+      color: "text-green-500",
+      bgColor: "bg-green-500/10",
+    },
   ];
 
   return (

@@ -40,7 +40,7 @@ const Hero = () => {
                 I Fix Expensive, Slow Data Platforms
               </h2>
               <p className="text-xl md:text-2xl text-muted-foreground font-normal leading-relaxed max-w-2xl">
-                Senior Technical Architect who eliminates cost bloat, speeds up analytics by 10x, and builds cloud data systems that scale without breaking.
+                Technical Architect & Data Engineer who builds production pipelines that turn raw data into real-time insights. Specializing in AWS Redshift optimization, cost reduction, and zero-downtime migrations.
               </p>
             </div>
 
@@ -52,11 +52,11 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-3 px-5 py-3 bg-card/80 border border-accent/30 rounded-lg hover-lift shadow-md">
                 <Cloud className="w-6 h-6 text-accent animate-pulse" style={{ animationDuration: '3.5s' }} />
-                <span className="text-foreground font-semibold">AWS Redshift • Snowflake • Databricks</span>
+                <span className="text-foreground font-semibold">AWS Redshift • AWS DMS • ETL Works • Informatica</span>
               </div>
               <div className="flex items-center gap-3 px-5 py-3 bg-card/80 border border-accent/30 rounded-lg hover-lift shadow-md">
                 <BarChart3 className="w-6 h-6 text-accent animate-pulse" style={{ animationDuration: '4s' }} />
-                <span className="text-foreground font-semibold">Led 7+ Engineering Teams</span>
+                <span className="text-foreground font-semibold">Built 100+ Production ETL Pipelines</span>
               </div>
             </div>
 

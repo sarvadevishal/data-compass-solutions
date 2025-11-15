@@ -9,8 +9,8 @@ const About = () => {
     },
     {
       icon: Users,
-      title: "Distributed Teams",
-      description: "Led 7+ engineers across US, India, Canada—delivering HIPAA-compliant healthcare and MLM systems on time",
+      title: "Hands-On Engineering",
+      description: "Built end-to-end ETL pipelines using AWS DMS, ETL Works, Informatica Cloud, and AWS Glue for Fortune 500 clients",
     },
     {
       icon: Zap,
@@ -48,13 +48,16 @@ const About = () => {
             <div className="animate-slide-up">
               <div className="prose prose-lg prose-invert max-w-none">
                 <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                  Most data platforms are <span className="text-foreground font-bold">too slow, too expensive, and built by teams who've never seen production at scale</span>. I fix that.
+                  I'm a hands-on Technical Architect who builds data platforms that actually work.
                 </p>
                 <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                  Over the past decade, I've architected data systems for <span className="text-accent font-bold">Fortune 500 healthcare companies, multi-level marketing enterprises, and high-growth SaaS platforms</span>. My focus: <span className="text-foreground font-bold">eliminate waste, speed up queries, and build infrastructure that doesn't need constant babysitting</span>.
+                  Over the past 10 years, I've architected end-to-end ETL pipelines for Fortune 500 healthcare companies and multi-level marketing enterprises. My day-to-day: writing SQL, tuning Redshift clusters, building Informatica Cloud jobs, and making AWS DMS replications run smoothly.
+                </p>
+                <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+                  I specialize in <span className="text-accent font-bold">AWS Redshift performance tuning</span>, <span className="text-accent font-bold">near real-time data replication using AWS DMS</span> (MySQL Aurora to Redshift), and building custom pipelines with <span className="text-accent font-bold">ETL Works and AWS Glue</span>. I've written thousands of lines of production SQL, migrated terabytes of data without downtime, and cut cloud costs by over $100K annually.
                 </p>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  I specialize in <span className="text-accent">AWS Redshift modernization</span>, <span className="text-accent">zero-downtime migrations</span>, and <span className="text-accent">real-time analytics</span> using tools like Informatica Cloud, Tableau, and Looker. If your data team is spending more time firefighting than building, we should talk.
+                  I also build executive dashboards using <span className="text-accent">Power BI and Looker BI</span>. If your data pipelines are slow, expensive, or constantly breaking, I can fix that.
                 </p>
               </div>
             </div>
@@ -85,7 +88,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-accent opacity-5 rounded-2xl blur-xl"></div>
               <blockquote className="relative bg-card/80 backdrop-blur-sm border border-accent/20 rounded-2xl p-10 shadow-elegant">
                 <p className="text-2xl font-quote italic text-foreground leading-relaxed mb-6">
-                  "Most data platforms fail because teams overcomplicate things. My philosophy: <span className="text-accent font-bold">ship fewer tools, optimize relentlessly, and build systems that don't wake you up at 3 AM</span>."
+                  "Good data platforms run fast and cost less. Great ones do that without breaking when traffic spikes."
                 </p>
                 <footer className="text-base font-bold text-accent">
                   — Vishal Sarvade

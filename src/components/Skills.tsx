@@ -19,9 +19,11 @@ const Skills = () => {
       title: "ETL & Data Integration",
       skills: [
         { name: "Informatica Cloud", level: "Expert" },
+        { name: "AWS DMS", level: "Expert" },
+        { name: "ETL Works", level: "Advanced" },
+        { name: "AWS Glue", level: "Advanced" },
         { name: "AWS Data Pipeline", level: "Advanced" },
         { name: "SSIS", level: "Advanced" },
-        { name: "AWS Glue", level: "Advanced" },
         { name: "Zero-ETL Integration", level: "Advanced" },
         { name: "Fivetran", level: "Intermediate" },
       ],
@@ -59,14 +61,13 @@ const Skills = () => {
     },
     {
       icon: Users,
-      title: "Leadership & Soft Skills",
+      title: "Collaboration & Architecture",
       skills: [
-        { name: "Team Leadership", level: "Expert" },
-        { name: "Sprint Planning & Agile", level: "Advanced" },
-        { name: "Client Communication", level: "Expert" },
-        { name: "Technical Mentorship", level: "Advanced" },
-        { name: "Code Review", level: "Expert" },
         { name: "Architecture Design", level: "Expert" },
+        { name: "Code Review", level: "Expert" },
+        { name: "Technical Mentorship", level: "Advanced" },
+        { name: "Sprint Planning & Agile", level: "Advanced" },
+        { name: "Cross-Team Collaboration", level: "Advanced" },
       ],
     },
   ];
@@ -105,10 +106,10 @@ const Skills = () => {
       icon: Database,
     },
     {
-      name: "Team Leadership",
-      proof: "Mentored 7+ engineers across distributed teams, delivering enterprise solutions",
-      level: 90,
-      icon: Users,
+      name: "ETL Pipeline Architecture",
+      proof: "Built 100+ production ETL pipelines using AWS DMS, ETL Works, and Informatica Cloud",
+      level: 95,
+      icon: Cloud,
     },
     {
       name: "Performance Optimization",

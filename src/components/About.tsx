@@ -4,23 +4,23 @@ const About = () => {
   const highlights = [
     {
       icon: Award,
-      title: "Business-Driven Technical Strategy",
-      description: "Reduced operational and architectural expenses by over 100K+ annually through targeted optimizations",
+      title: "Cost Architecture",
+      description: "Eliminated $100K+ annually by decommissioning Salesforce, PostgreSQL, and legacy AWS Data Pipelines",
     },
     {
       icon: Users,
-      title: "Cross-Functional Leadership",
-      description: "Leading 7+ engineers across distributed teams to deliver enterprise solutions",
+      title: "Distributed Teams",
+      description: "Led 7+ engineers across US, India, Canada—delivering HIPAA-compliant healthcare and MLM systems on time",
     },
     {
       icon: Zap,
-      title: "Performance Excellence",
-      description: "Achieving 10x improvement in query performance through zero-downtime optimization",
+      title: "Zero-Downtime Migrations",
+      description: "Migrated Redshift workloads from 10+ minute queries to sub-60 second response times without downtime",
     },
     {
       icon: Target,
-      title: "Measurable Business Impact",
-      description: "Real-time analytics enabling instant decision-making for Fortune 500 clients",
+      title: "Real-Time Analytics",
+      description: "Moved healthcare dashboards from 24-hour delays to 1-hour refresh cycles using recursive CTEs in Redshift",
     },
   ];
 
@@ -36,10 +36,10 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-              Overview
+            <h2 className="text-5xl md:text-6xl font-heading font-black text-foreground mb-6">
+              Why Companies Hire Me
             </h2>
-            <div className="w-24 h-1 bg-gradient-accent mx-auto"></div>
+            <div className="w-32 h-1.5 bg-gradient-accent mx-auto rounded-full"></div>
           </div>
 
           {/* Main content */}
@@ -47,11 +47,14 @@ const About = () => {
             {/* Bio */}
             <div className="animate-slide-up">
               <div className="prose prose-lg prose-invert max-w-none">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  I'm a <span className="text-foreground font-semibold">Technical Architect and Big Data Engineer</span> specializing in delivering <span className="text-accent font-semibold">measurable business impact</span> through enterprise-scale data platforms. <span className="text-foreground font-semibold">I bridge business objectives with technical execution</span>, transforming complex data challenges into solutions that drive ROI and competitive advantage.
+                <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+                  Most data platforms are <span className="text-foreground font-bold">too slow, too expensive, and built by teams who've never seen production at scale</span>. I fix that.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  With proven expertise in <span className="text-accent">cost optimization</span> (reducing expenses by over 100K+ annually), <span className="text-accent">performance excellence</span> (achieving 10x improvements), and <span className="text-accent">team leadership</span> (leading 7+ distributed engineers), I combine strategic thinking with hands-on technical depth using AWS Redshift, Informatica Cloud, and modern BI platforms.
+                <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+                  Over the past decade, I've architected data systems for <span className="text-accent font-bold">Fortune 500 healthcare companies, multi-level marketing enterprises, and high-growth SaaS platforms</span>. My focus: <span className="text-foreground font-bold">eliminate waste, speed up queries, and build infrastructure that doesn't need constant babysitting</span>.
+                </p>
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  I specialize in <span className="text-accent">AWS Redshift modernization</span>, <span className="text-accent">zero-downtime migrations</span>, and <span className="text-accent">real-time analytics</span> using tools like Informatica Cloud, Tableau, and Looker. If your data team is spending more time firefighting than building, we should talk.
                 </p>
               </div>
             </div>
@@ -78,20 +81,26 @@ const About = () => {
             </div>
 
             {/* Philosophy quote with glassmorphism */}
-            <div className="mt-20 p-12 glassmorphism border border-accent/30 rounded-3xl animate-fade-in shadow-xl hover:shadow-glow transition-all duration-500">
-              <blockquote className="text-2xl md:text-3xl font-quote italic text-gradient-primary text-center leading-relaxed mb-8">
-                "Exceptional data architecture isn't about technology alone — it's about understanding business challenges deeply and delivering solutions that drive measurable value at scale."
+            <div className="relative mt-16">
+              <div className="absolute inset-0 bg-gradient-accent opacity-5 rounded-2xl blur-xl"></div>
+              <blockquote className="relative bg-card/80 backdrop-blur-sm border border-accent/20 rounded-2xl p-10 shadow-elegant">
+                <p className="text-2xl font-quote italic text-foreground leading-relaxed mb-6">
+                  "Most data platforms fail because teams overcomplicate things. My philosophy: <span className="text-accent font-bold">ship fewer tools, optimize relentlessly, and build systems that don't wake you up at 3 AM</span>."
+                </p>
+                <footer className="text-base font-bold text-accent">
+                  — Vishal Sarvade
+                </footer>
               </blockquote>
-              <div className="flex justify-center mt-6">
+              <div className="flex justify-center mt-8">
                 <a
                   href="https://www.linkedin.com/in/vishalkumarsarvade"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-accent rounded-full hover:scale-105 transition-all duration-300 shadow-glow text-white font-semibold"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-accent rounded-full hover:scale-105 transition-all duration-300 shadow-glow text-white font-bold text-lg"
                   aria-label="Connect on LinkedIn"
                 >
                   <Linkedin className="w-5 h-5" />
-                  <span>Connect on LinkedIn</span>
+                  <span>Let's Connect on LinkedIn</span>
                 </a>
               </div>
             </div>
